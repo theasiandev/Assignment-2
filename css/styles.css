@@ -1,0 +1,20 @@
+﻿.content {
+    padding-top: 65px;
+}
+
+.welcomemessage{
+    text-align: center;
+    padding:100px;
+}
+    .welcomemessage h1 {
+        font-size: xx-large;
+    }
+
+video {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}

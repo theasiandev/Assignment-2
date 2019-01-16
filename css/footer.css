@@ -1,0 +1,45 @@
+﻿body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    margin:0;
+}
+.outer {
+    background-color: #f4f4f4;
+    padding: 12px
+}
+
+.wrap {
+    margin: 0 auto;
+}
+
+.sub {
+    padding: 12px;
+    width: 32%;
+    height: 150px;
+    background: #f4f4f4;
+    display: table-cell;
+    border-right: solid #b4b4b4 1px;
+}
+
+    .sub:last-child {
+        border: 0px
+    }
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+.logoNP {
+    width: auto;
+    height: auto;
+    max-height: 122px;
+    max-width: 300px;
+}
