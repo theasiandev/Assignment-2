@@ -15,6 +15,26 @@ footer {
     padding: 12px
 }
 
+.items {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1.5em;
+}
+#item{
+    border-color: #fff;
+    border-style: solid;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
 .wrap {
     margin: 0 auto;
 }
