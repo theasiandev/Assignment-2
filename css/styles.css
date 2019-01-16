@@ -18,3 +18,8 @@ video {
     margin: 0 auto;
     display: block;
 }
+
+.flag{
+    padding:100px;
+    text-align:center;
+}
