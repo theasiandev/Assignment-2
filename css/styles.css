@@ -49,6 +49,7 @@ video {
 .item1 {
     background: url("../media/RWS.jpg");
     background-size: cover;
+    width:100%;
 }
 
 .item2 {
