@@ -24,3 +24,44 @@ video {
     padding:100px;
     text-align:center;
 }
+
+.items {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1.5em;
+}
+
+#item {
+    border-color: #fff;
+    border-style: solid;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.item1 {
+    background: url("../media/RWS.jpg");
+    background-size: cover;
+}
+
+.item2 {
+    background: url("../media/Singapore-Flyer.png");
+    background-size: cover;
+}
+
+.item3 {
+    background: url("../media/Garden_by_the_bay.jpg");
+    background-size: cover;
+}
+
+.item4 {
+    background: url("../media/singapore_zoo.jpg");
+    background-size: cover;
+}
