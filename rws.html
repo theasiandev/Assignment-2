@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Tourism in Singapore</title>
     <link rel="shortcut icon" type="image/x-icon" href="media/newlogo.ico" />
+    <link rel="stylesheet" type="text/css" href="css/rws.css" />
     <script src="js/includeHTML.js"></script>
 </head>
 <body>
@@ -13,7 +14,58 @@
     </header>
 
     <div class="content">
-        <!-- Put content here -->
+        <section class="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/1d35103d82/singapore/" data-label_1="SINGAPORE" data-label_2="WEATHER">SINGAPORE WEATHER</a>
+            <script>
+                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+            </script>
+        </section>
+
+        <section class="rwsimg" style="float:left; margin:30px;">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="media/RWS.jpg" style="width:100%">
+                    <div class="text">Resorts World Sentosa</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="media/rws/USS.jpg" style="width:100%">
+                    <div class="text">Universal Studios Singapore</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="media/rws/ACW.jpg" style="width:100%">
+                    <div class="text" style="color:black;">Adventure Cove Waterpark</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="media/rws/SEAA.jpg" style="width:100%">
+                    <div class="text">SEA Aquarium</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <script src="js/slideshow.js"></script>
+        </section>
+
+        <section class="info-text">
+            <h3>Resorts World Sentosa is an integrated resort on the island of Sentosa, off the southern coast of Singapore. It is one of the two resorts in Singapore, the other being <a href="mbs.html" style="color:red;">Marina Bay Sands.</a></h3>
+
+            <h4>Major attractions: Universal Studios, Adventure Cove Waterpark, SEA Aquarium</h4>
+
+            <section class="calltoaction">
+                <a class="button" href="#">Buy tickets now!</a>
+            </section>
+        </section>
+
+        <section class="rws-video">
+            <video controls autoplay muted loop>
+                <source src="media/rws/rwsvideo.mp4" type="video/mp4" />
+                Your browser does not support HTML5 videos.
+            </video>
+        </section>
     </div>
 
     <footer>
