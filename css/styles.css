@@ -42,8 +42,12 @@ video {
     width: 250px;
     height: 300px;
     display: flex;
-    flex-direction: column;
-    flex: auto;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+section .attractions{
 }
 
 .item1 {
