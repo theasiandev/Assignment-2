@@ -4,11 +4,13 @@
     background-color: #f4f4f4;
 }
 footer {
+    
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f4f4f4;
     margin:0;
+    bottom:0;
 }
 .outer {
     background-color: #f4f4f4;
@@ -29,17 +31,37 @@ footer {
     margin: 10px;
     padding: 20px;
     width: 300px;
-    height: 500px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     flex: auto;
+ 
+}
+
+.item1{
+    background: url("../media/RWS.jpg");
+    background-size: cover;
+}
+.item2 {
+    background: url("../media/Singapore-Flyer.jpg");
+    background-size: cover;
+}
+.item3 {
+    background: url("../media/Garden_by_the_bay.jpg");
+    background-size: cover;
+}
+.item4 {
+    background: url("../media/singapore_zoo.jpg");
+    background-size: cover;
 }
 
 .wrap {
     margin: 0 auto;
+    display:block;
 }
 
 .sub {
+    
     padding: 12px;
     width: 32%;
     height: 150px;
@@ -52,6 +74,12 @@ footer {
         border: 0px
     }
 
+.footer-title{
+    text-align:center;
+    font-size:30px;
+    margin:0;
+
+}
 a {
     text-decoration:none;
     color:black;
@@ -62,4 +90,9 @@ a {
     height: auto;
     max-height: 122px;
     max-width: 300px;
+}
+
+@media screen and (min-width: 700px) {
+ 
+
 }
