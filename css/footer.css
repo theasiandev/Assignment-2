@@ -30,8 +30,8 @@ footer {
     border-style: solid;
     margin: 10px;
     padding: 20px;
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     flex: auto;
@@ -43,7 +43,7 @@ footer {
     background-size: cover;
 }
 .item2 {
-    background: url("../media/Singapore-Flyer.jpg");
+    background: url("../media/Singapore-Flyer.png");
     background-size: cover;
 }
 .item3 {
