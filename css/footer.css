@@ -9,6 +9,7 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #f4f4f4;
+    width:100%;
     margin:0;
     bottom:0;
 }
