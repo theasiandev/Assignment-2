@@ -8,7 +8,7 @@ footer {
     display: flex;
     align-items: center;
     text-size-adjust: 100%;
-    align-content: center;
+    justify-content: center;
     background-color: #f4f4f4;
     margin: 0;
     bottom: 0;
@@ -29,7 +29,6 @@ footer {
 }
 
 .sub {
-    padding-left:20px;
     padding: 12px;
     width: 32%;
     height: 150px;
@@ -52,11 +51,4 @@ a {
     height: auto;
     max-height: 122px;
     max-width: 300px;
-}
-
-@media screen and (max-width: 600px) {
-    footer {
-        width: 100%;
-        padding-left:20px;
-    }
 }
