@@ -6,9 +6,40 @@
     box-sizing: border-box
 }
 
+.rws-content {
+    max-width: 1000px;
+    margin: auto;
+}
 body {
     font-family: Verdana, sans-serif;
     margin: 0
+}
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Content */
+.inner-content {
+    background-color: white;
+    padding: 10px;
+    height:500px;
 }
 
 .mySlides {
@@ -148,4 +179,21 @@ video {
     text-align: center;
     margin: 0 auto;
     display: block;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+  
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+      
+    }
+  
 }
