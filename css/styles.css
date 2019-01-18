@@ -33,12 +33,21 @@ h2 {
     box-sizing: border-box;
 }
 
+.flex-content {
+    max-width: 100%;
+}
+
 .column {
     float: left;
     width: 25%;
     padding: 5px;
-    height: 250px;
+    height: 350px;
     display: flex;
+}
+
+.column img{
+    max-height:350px;
+    max-width:400px;
 }
 
 /* Clearfix (clear floats) */
@@ -48,8 +57,17 @@ h2 {
     display: table;
 }
 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1200px) {
+    .column {
+        position:center;
+        width: 40%;
+        margin: auto;
+    }
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
     .column {
         width: 100%;
     }
