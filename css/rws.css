@@ -9,6 +9,8 @@
 .inner-rws-content {
     max-width: 1000px;
     margin: auto;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 .rws-content {
     background-color: #E9E9E9;
