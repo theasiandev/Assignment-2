@@ -10,10 +10,18 @@
     max-width: 1000px;
     margin: auto;
 }
+
+.rws {
+    padding-top: 10px;
+    width: 100%;
+    background-color: #E9E9E9;
+}
+
 body {
     font-family: Verdana, sans-serif;
     margin: 0
 }
+
 .row {
     margin: 8px -16px;
 }
@@ -39,7 +47,8 @@ body {
 .inner-content {
     background-color: white;
     padding: 10px;
-    height:500px;
+    height: 500px;
+    box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .mySlides {
