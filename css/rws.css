@@ -6,15 +6,17 @@
     box-sizing: border-box
 }
 
-.rws-content {
+.inner-rws-content {
     max-width: 1000px;
     margin: auto;
 }
-
-.rws {
-    padding-top: 10px;
-    width: 100%;
+.rws-content {
     background-color: #E9E9E9;
+    width: 100%;
+   
+}
+.rws {
+    padding-top: 100px;  
 }
 
 h1 {
@@ -213,6 +215,9 @@ video {
        
         width: 50%;
     }
+    .rws{
+        padding:0;
+    }
   
 }
 
@@ -221,6 +226,9 @@ video {
     .column {
         width: 100%;
       
+    }
+    .rws{
+        padding:0;
     }
   
 }
