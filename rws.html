@@ -9,10 +9,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="media/newlogo.ico" />
     <link rel="stylesheet" type="text/css" href="css/rws.css" />
     <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
-    <script src="js/includeHTML.js"></script>
 </head>
 <body>
     <header>
@@ -35,35 +36,52 @@
                 </video>
             </center>
         </section>
+        
+            <section class="rwsimg" style="float:left; margin:30px;">
+                <div class="carousel" id="featured" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <ol class="carousel-indicators">
+                            <li data-target="#featured" data-slide-to="0"></li>
+                            <li data-target="#featured" data-slide-to="1" class="active"></li>
+                            <li data-target="#featured" data-slide-to="2"></li>
+                            <li data-target="#featured" data-slide-to="3"></li>
+                        </ol>
+                        <div class="item active">
+                            <img src="media/rws/RWS.jpg" alt="RWS" style="width:100%;">
+                            <div class="text"><h3>Resorts World Sentosa</h3></div>
+                        </div>
 
-        <section class="rwsimg" style="float:left; margin:30px;">
-            <div class="slideshow-container">
+                        <div class="item">
+                            <img src="media/rws/USS.jpg" alt="USS" style="width:100%;">
+                            <div class="text"><h3>Universal Studios Singapore</h3></div>
+                        </div>
 
-                <div class="mySlides fade">
-                    <img src="media/rws/RWS.jpg" style="width:100%">
-                    <div class="text"><h4>Resorts World Sentosa</h4></div>
+                        <div class="item">
+                            <img src="media/rws/ACW.jpg" alt="ACW" style="width:100%;">
+                            <div class="text"><h3>Adventure Cove Waterpark</h3></div>
+                        </div>
+
+                        <div class="item">
+                            <img src="media/rws/SEAA.jpg" alt="SEA" style="width:100%;">
+                            <div class="text"><h3>SEA Aquarium</h3></div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#featured" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#featured" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <br />
                 </div>
 
-                <div class="mySlides fade">
-                    <img src="media/rws/USS.jpg" style="width:100%">
-                    <div class="text"><h4>Universal Studios Singapore</h4></div>
-                </div>
 
-                <div class="mySlides fade">
-                    <img src="media/rws/ACW.jpg" style="width:100%">
-                    <div class="text"><h4>Adventure Cove Waterpark</h4></div>
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="media/rws/SEAA.jpg" style="width:100%">
-                    <div class="text"><h4>SEA Aquarium</h4></div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <script src="js/slideshow.js"></script>
-        </section>
+            </section>
+     
 
         <section class="info-text">
             <h3>Resorts World Sentosa is an integrated resort on the island of Sentosa, off the southern coast of Singapore. It is one of the two resorts in Singapore, the other being <a href="mbs.html" style="color:red;">Marina Bay Sands.</a></h3>
@@ -76,52 +94,52 @@
         </section>
         <!-- Content starts here -->
         <section class="rws">
-            
+
             <div class="rws-content">
                 <div class="inner-rws-content">
-                <center><h1 class="content-title">Chinese New Year Events!</h1></center>
-                <div class="row">
-                    <div class="column">
-                        <div class="inner-content">
-                            <img src="media/rws/cny1.jpg" alt="Chinese New Year" style="width:100%">
-                            <h3>Chinese New Year Celebrations at Universal Studios Singapore</h3>
-                            <p>Usher in Chinese New Year with the mystical dragon dance through an exciting park-wide trail and join your favourite characters dressed in their New Year best! Ring in some good fortune with friends from Sesame Street as they celebrate with a Monster Lo Hei. Plus, enjoy thrilling rides and attractions!</p>
+                    <center><h1 class="content-title">Chinese New Year Events!</h1></center>
+                    <div class="row">
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/rws/cny1.jpg" alt="Chinese New Year" style="width:100%">
+                                <h3>Chinese New Year Celebrations at Universal Studios Singapore</h3>
+                                <p>Usher in Chinese New Year with the mystical dragon dance through an exciting park-wide trail and join your favourite characters dressed in their New Year best! Ring in some good fortune with friends from Sesame Street as they celebrate with a Monster Lo Hei. Plus, enjoy thrilling rides and attractions!</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="inner-content">
-                            <img src="media/rws/cny2.jpg" alt="DIVE INTO A SEA OF ABUNDANCE" style="width:100%">
-                            <h3>Dive into a Sea of Abundance</h3>
-                            <p>Fish for prosperity at the S.E.A. Aquarium, where an underwater dragon dance and a line-up of fun, fortune-filled activities await.</p>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/rws/cny2.jpg" alt="DIVE INTO A SEA OF ABUNDANCE" style="width:100%">
+                                <h3>Dive into a Sea of Abundance</h3>
+                                <p>Fish for prosperity at the S.E.A. Aquarium, where an underwater dragon dance and a line-up of fun, fortune-filled activities await.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="inner-content">
-                            <img src="media/rws/cny3.jpg" alt="Fortune Street" style="width:100%">
-                            <h3>Fortunes Come True</h3>
-                            <p>Learn about divinations with exciting live demonstrations by grandmasters of the craft.</p>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/rws/cny3.jpg" alt="Fortune Street" style="width:100%">
+                                <h3>Fortunes Come True</h3>
+                                <p>Learn about divinations with exciting live demonstrations by grandmasters of the craft.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="inner-content">
-                            <img src="media/rws/cny4.jpg" alt="Abalone Reunion Feast" style="width:100%">
-                            <h3>Abalone Abundance</h3>
-                            <p>Huat ah! Come celebrate Chinese New Year at Resorts World Sentosa with a line-up of auspicious abalone dishes, Treasure Pots (盆菜) and Prosperity Yu Sheng perfect for your annual reunion with the whole family!</p>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/rws/cny4.jpg" alt="Abalone Reunion Feast" style="width:100%">
+                                <h3>Abalone Abundance</h3>
+                                <p>Huat ah! Come celebrate Chinese New Year at Resorts World Sentosa with a line-up of auspicious abalone dishes, Treasure Pots (盆菜) and Prosperity Yu Sheng perfect for your annual reunion with the whole family!</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="inner-content">
-                            <img src="media/rws/cny5.jpg" alt="Abundant Fortunes at the Gre8t Fortune Draws!" style="width:100%">
-                            <h3>Abundant Fortunes</h3>
-                            <p>This Lunar New Year, Spend and Win over $88,888 worth of prizes in the Gre8t Fortune Draws!</p>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/rws/cny5.jpg" alt="Abundant Fortunes at the Gre8t Fortune Draws!" style="width:100%">
+                                <h3>Abundant Fortunes</h3>
+                                <p>This Lunar New Year, Spend and Win over $88,888 worth of prizes in the Gre8t Fortune Draws!</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="inner-content">
-                            <img src="media/rws/cny6.jpg" alt="2019 Chinese New Year Live Showcase – A-Mei, Anna & Eve Ai" style="width:100%">
-                            <h3>2019 Chinese New Year Live Showcase – A-Mei, Anna & Eve Ai</h3>
-                            <p>Mandopop superstars A-Mei, Anna and Eve Ai unite for a magnificent live showcase!</p>
-                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/rws/cny6.jpg" alt="2019 Chinese New Year Live Showcase – A-Mei, Anna & Eve Ai" style="width:100%">
+                                <h3>2019 Chinese New Year Live Showcase – A-Mei, Anna & Eve Ai</h3>
+                                <p>Mandopop superstars A-Mei, Anna and Eve Ai unite for a magnificent live showcase!</p>
+                            </div>
                         </div>
                     </div>
                     <!-- contents end here -->
@@ -130,14 +148,14 @@
         </section>
         <section class="form">
             <div id="booking" class="section">
-                
+
                 <div class="section-center">
                     <center><h1>Book an Attraction</h1></center>
                     <div class="container">
                         <div class="row">
                             <div class="booking-form">
                                 <form>
-                                    <div class="form-group">                                                                               
+                                    <div class="form-group">
                                         <span class="form-label">Check In</span>
                                         <input class="form-control" type="date" required>
                                     </div>
@@ -200,11 +218,13 @@
             </div>
 
         </section>
-        </div>
+    </div>
 
-        <footer>
-            <div w3-include-html="footer.html"></div>
-        </footer>
-        <script>includeHTML();</script>
+    <footer>
+        <div w3-include-html="footer.html"></div>
+    </footer>
+    <script>includeHTML();</script>
+    <script src="js/includeHTML.js"></script>
+   
 </body>
 </html>
