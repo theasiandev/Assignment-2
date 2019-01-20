@@ -20,6 +20,13 @@ video {
     display: block;
 }
 
+.contents {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .flag{
     padding:100px;
     text-align:center;

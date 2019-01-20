@@ -72,6 +72,7 @@ body {
 .inner-content {
     background-color: white;
     padding: 10px;
+   
     height:430px;
     box-shadow: 10px 10px 5px #aaaaaa;
 }
