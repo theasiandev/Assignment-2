@@ -20,6 +20,12 @@ video {
     display: block;
 }
 
+.image{
+    height:100%;
+    width:auto;
+    max-width:500px;
+   
+}
 .contents {
     max-width: 1500px;
     margin: 0 auto;
@@ -27,9 +33,9 @@ video {
     padding-bottom: 10px;
 }
 
-.flag{
-    padding:100px;
-    text-align:center;
+.flag {
+    padding: 100px;
+    text-align: center;
 }
 h2 {
     font-size: 1.2em;
@@ -42,6 +48,7 @@ h2 {
 
 .flex-content {
     max-width: 100%;
+    padding-bottom:50px;
 }
 
 .column {
