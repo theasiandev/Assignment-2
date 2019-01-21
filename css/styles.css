@@ -20,7 +20,7 @@ video {
     display: block;
 }
 
-.image{
+.images{
     height:100%;
     width:auto;
     max-width:500px;
@@ -33,11 +33,11 @@ a:hover #hvrimg {
     transform: scale(1.5);
 }
 
-a:hover .image {
+a:hover .images {
     box-shadow: 8px 8px 8px rgba(0,0,0,.3);
 }
 
-.image {
+.images {
     box-shadow: 4px 4px 4px rgba(0,0,0,.4);
     transition: transform 0.3s linear;
 }
@@ -52,10 +52,6 @@ a:hover .image {
     padding: 100px;
     text-align: center;
 }
-h2 {
-    font-size: 1.2em;
-    margin-top: 0;
-}
 
 * {
     box-sizing: border-box;
@@ -64,7 +60,7 @@ h2 {
 
 .flex-content {
     max-width: 100%;
-    padding-bottom:50px;
+    padding-bottom:300px;
 }
 
 .column {
