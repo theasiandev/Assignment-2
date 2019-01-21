@@ -1,4 +1,42 @@
-function formFunction(){
+function validDate(date) {
+
+    todayDate = getTodaysDate();
+    if (date > todayDate) {
+        document.getElementById('dateInput').setAttribute('min', getTodaysDate());
+        document.getElementById('dateInput').setAttribute('max', getTodaysDateThreeMonths());
+    }
+}
+
+function getTodaysDate() {
+    date = new Date();
+    day = date.getDate();
+    month = date.getMonth() + 1;
+    year = date.getFullYear();
+
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+
+    today = year + "-" + month + "-" + day;
+
+    return today;
+}
+
+function getTodaysDateThreeMonths() {
+    date = new Date();
+    day = date.getDate();
+    month = date.getMonth() + 3;
+    year = date.getFullYear();
+    month += 1;
+
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+
+    today = year + "-" + month + "-" + day;
+
+    return today;
+}
+
+function formFunction() {
     //Getting the values from the form
     var attraction = document.getElementById("attractionSelect").value;
     var adults = document.getElementById("adultsSelect").value;

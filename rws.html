@@ -198,8 +198,8 @@
                                         <div class="booking-form">
                                             <form onchange="formFunction()" action="thankyou.html">
                                                 <div class="form-group">
-                                                    <span class="form-label">Check In</span>
-                                                    <input class="form-control" type="date" required>
+                                                    <span class="form-label">Check In (Any day up to 3 months in advance)</span>
+                                                    <input class="form-control" type="date" required id="dateInput" name="inputDate" onchange="validDate(inputDate)">
                                                 </div>
                                                 <div class="row no-margin">
                                                     <div class="col-sm-6">
