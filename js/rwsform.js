@@ -36,7 +36,7 @@ function formFunction(){
     }
 
     if (txt == "") {
-        txt = "Please select an attraction."
+        txt = "Please select an attraction." 
     }
 
     //Displaying output to webpage
