@@ -33,11 +33,11 @@ a:hover #hvrimg {
     transform: scale(1.5);
 }
 
-a:hover img {
+a:hover .image {
     box-shadow: 8px 8px 8px rgba(0,0,0,.3);
 }
 
-img {
+.image {
     box-shadow: 4px 4px 4px rgba(0,0,0,.4);
     transition: transform 0.3s linear;
 }
