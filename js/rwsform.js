@@ -36,5 +36,5 @@ function formFunction(){
     }
 
     //Displaying output to webpage
-    document.getElementById("output").innerHTML = txt;
+    document.getElementById("result").innerHTML = txt;
 }
