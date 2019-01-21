@@ -4,6 +4,10 @@
     background-color: #f4f4f4;
 }
 
+a:hover{
+    color: red;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -49,6 +53,24 @@ a {
 .logoNP {
     width: auto;
     height: auto;
-    max-height: 122px;
-    max-width: 300px;
+    max-height: 200px;
+    max-width: 320px;
+}
+
+@media screen and (max-width: 780px) {
+    .logoNP{
+        width: auto;
+        height: auto;
+        max-height: 53px;
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logoNP {
+        width: auto;
+        height: auto;
+        max-height: 100px;
+        max-width: 220px;
+    }
 }
