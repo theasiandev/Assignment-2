@@ -3,9 +3,13 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gardens by the Bay</title>
     <link rel="shortcut icon" type="image/x-icon" href="media/newlogo.ico" />
     <link rel="stylesheet" type="text/css" href="css/gbb.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="js/includeHTML.js"></script>
 </head>
 <body>
@@ -18,6 +22,249 @@
             <script>
                 !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
             </script>
+        </section>
+        <section class="gbb-video">
+            <center>
+                <video controls autoplay muted loop>
+                    <source src="media/gbb/gbb.mp4" type="video/mp4" />
+                    Your browser does not support HTML5 videos.
+                </video>
+            </center>
+        </section>
+
+        <section class="gbbimg" style="float:left; margin:30px;">
+            <div class="carousel" id="featured" data-ride="carousel">
+                <div class="carousel-inner">
+                    <ol class="carousel-indicators">
+                        <li data-target="#featured" data-slide-to="0"></li>
+                        <li data-target="#featured" data-slide-to="1" class="active"></li>
+                        <li data-target="#featured" data-slide-to="2"></li>
+                        <li data-target="#featured" data-slide-to="3"></li>
+                    </ol>
+                    <div class="item active">
+                        <img src="media/gbb/gbb1.jpg" alt="Garden" style="width:100%;">
+                        <div class="text"><h3>Garden By the Bay</h3></div>
+                    </div>
+
+                    <div class="item">
+                        <img src="media/gbb/gbb2.jpg" alt="catus" style="width:100%;">
+                        <div class="text"><h3>Sun Pavilion</h3></div>
+                    </div>
+
+                    <div class="item">
+                        <img src="media/gbb/gbb3.jpg" alt="Skyway" style="width:100%;">
+                        <div class="text"><h3>Supertree Grove & OCBC Skyway</h3></div>
+                    </div>
+
+                    <div class="item">
+                        <img src="media/gbb/gbb4.jpg" alt="Canyon" style="width:100%;">
+                        <div class="text"><h3>The Canyon</h3></div>
+                    </div>
+
+                    <div class="item">
+                        <img src="media/gbb/gbb5.jpg" alt="Flower" style="width:100%;">
+                        <div class="text"><h3>Flower Dome</h3></div>
+                    </div>
+
+                    <div class="item">
+                        <img src="media/gbb/gbb6.jpg" alt="Cloud" style="width:100%;">
+                        <div class="text"><h3>Cloud Forest</h3></div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#featured" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#featured" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <br />
+            </div>
+
+
+        </section>
+
+
+        <section class="info-text">
+            <h3>A national garden and premier horticultural attraction for local and international visitors, Gardens by the Bay is a showpiece of horticulture and garden artistry that presents the plant kingdom in a whole new way, entertaining while educating visitors with plants seldom seen in this part of the world, ranging from species in cool, temperate climates to tropical forests and habitats.</h3>
+
+            <h4>Major attractions: Cloud Forest, Flower Dome, The Canyon, Supertree Grove, Sun Pavilion and Serene Garden</h4>
+            <p>
+                -Book your tickets at our ticketing counter or pre-book below.
+            </p>
+            <section class="calltoaction">
+                <a class="button" href="#booking">Buy tickets now!</a>
+            </section>
+        </section>
+        <!-- Content starts here -->
+        <section class="gbb">
+
+            <div class="gbb-content">
+                <div class="inner-gbb-content">
+                    <center><h1 class="content-title">Upcoming Events!</h1></center>
+                    <div class="row">
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/gbb/cny.jpg" alt="Floral Display" style="width:100%">
+                                <h3>"Dahlia Dreams" floral display</h3>
+                                <p>Stroll through a Chinese garden blooming with colourful dahlias as the popular "Dahlia Dreams" floral display at Gardens by the Bay returns once again to usher in a brand new year.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/gbb/orchid.jpg" alt="Orchids of the Andes" style="width:100%">
+                                <h3>Orchids of the Andes</h3>
+                                <p>The “Orchids of the Andes” (安第斯山脉兰花展) display explores the relationship between the Tropical Andean landscape, its flora and the people. Visitors can look forward to a variety of exquisite orchid species and hybrids dotting a landscape featuring elements of the famous mountain range, such as Inca ruins, a cavern, waterfalls and even “llamas”.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/gbb/rhapsody.jpg" alt="Garden Rhapsody" style="width:100%">
+                                <h3>Garden Rhapsody</h3>
+                                <p>Come and be dazzled by the magnificent sight of our Supertrees and let the music and lights entertain you in our daily Garden Rhapsody light and sound shows!</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/gbb/irun.jpg" alt="i-Run" style="width:100%">
+                                <h3>i-Run</h3>
+                                <p>i-Run welcomes everyone to build up their fitness levels and stamina through running. Participants will enjoy routine weekly runs of moderate to vigorous intensity led by professional trainers and pacers.</p>
+                            </div>
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+
+            <!-- contents end here -->
+            <!-- Content starts here -->
+
+
+            <div class="gbb-content">
+                <div class="inner-gbb-content">
+                    <center><h1 class="content-title">Attractions in Gardens By the Bay</h1></center>
+                    <div class="row">
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/gbb/cloud.jpg" alt="Cloud Forest" style="width:100%">
+                                <h3>Cloud Forest</h3>
+                                <p>Enter the Cloud Forest, a mysterious world veiled in mist. Take in breath-taking mountain views surrounded by diverse vegetation and hidden floral gems.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/gbb/flower.jpg" alt="Flower Dome" style="width:100%">
+                                <h3>Flower Dome</h3>
+                                <p>Be amazed by changing display of flowers and plants from the Mediterranean and semi-arid regions.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/gbb/canyon.jpg" alt="The Canyon" style="width:100%">
+                                <h3>The Canyon</h3>
+                                <p>Bigger, ‘boulder’ and more beautiful. Here’s your opportunity to discover The Canyon, the Gardens’ newest attraction featuring the largest collection of sculptural rocks along a 400-metre-long dragon-shaped trail.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/gbb/skyway.jpg" alt="Supertree Grove" style="width:100%">
+                                <h3>Supertree Grove & OCBC Skyway</h3>
+                                <p>Gardens by the Bay's Supertrees are designed with large canopies that provide shade in the day and come alive with an exhilarating display of lights and sounds at night.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/gbb/sun.jpg" alt="Sun Pavilion" style="width:100%">
+                                <h3>Sun Pavilion</h3>
+                                <p>Take a walk through the Sun Pavilion and marvel at the amazing desert-like landscapes. With over 1,000 desert plants comprising some 100 different species and varieties, the Sun Pavilion is nothing short of extraordinary.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/gbb/serene.jpg" alt="Serene Garden" style="width:100%">
+                                <h3>
+                                    Serene Garden
+                                </h3>
+                                <p>Serene Garden, a calm and peaceful green space is just a short stroll away from the popular Supertree Grove. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contents end here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <div id="booking" class="section">
+
+                <div class="section-center">
+                    <center><h1>Book an Attraction</h1></center>
+                    <div class="container">
+                        <div class="row">
+                            <div class="booking-form">
+                                <form onchange="formFunction()">
+                                    <div class="form-group">
+                                        <span class="form-label">Check In</span>
+                                        <input class="form-control" type="date" required>
+                                    </div>
+                                    <div class="row no-margin">
+                                        <div class="col-sm-6">
+                                            <div class="form-group" id="adultsSelect">
+                                                <span class="form-label">Adults (18+)</span>
+                                                <select class="form-control">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group" id="childSelect">
+                                                <span class="form-label">Children (0-17)</span>
+                                                <select class="form-control">
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="attractionSelect">
+                                        <span class="form-label">I want to buy tickets for</span>
+                                        <select class="form-control" required>
+                                            <option value="" selected hidden>Select Attraction</option>
+                                            <option value="0">Singapore Zoo</option>
+                                            <option value="1">River Safari</option>
+                                            <option value="2">Night Safari</option>
+                                            <option value="3">Jurong Bird Park</option>
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="form-label">Email</span>
+                                        <input class="form-control" type="email" placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="form-label">Phone</span>
+                                        <input class="form-control" type="tel" placeholder="Enter your phone number">
+                                    </div>
+                                    <div class="form-btn">
+                                        <button class="submit-btn" onchange="formFunction()">Book Now</button>
+                                    </div>
+                                    <div style="color:red;" id="result">
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </div>
     <footer>
