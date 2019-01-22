@@ -390,15 +390,6 @@ video {
 
 }
 
-/* Responsive for inner-content */
-@media only screen and (max-width: 1200px){
-    .inner-flyer-content {
-        max-width: 1000px;
-        margin: 0 auto;
-       
-    }
-}
-
 @media only screen and (max-width: 1150px) {
 
     .inner-flyer-cnycontent {
