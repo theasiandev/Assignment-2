@@ -12,7 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="js/includeHTML.js"></script>
     <script src="js/flyerform.js"></script>
-   
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -90,6 +90,9 @@
             <section class="calltoaction">
                 <a class="button" href="#booking">Buy tickets now!</a>
             </section>
+            <h5>Singapore Flyer: 8:30am - 10:30pm Daily</h5><br />
+            <h5>Address: 30 Raffles Ave, Singapore 039803</h5>
+            <h5>Click <a href="https://goo.gl/maps/3JTEqWViZ3z">here</a> for directions by Google Maps</h5>
         </section>
         <!-- Content starts here -->
         <section class="flyer">
@@ -106,7 +109,7 @@
                                 <p>Pick from 9 of the Chinese New Year Set Menus crafted by the chefs of multi award winning Chinese restaurant, Sky View Pavilion. Recommended dishes for 2019 include “Fatt Choy” Abalone and Fresh Fruits Yu Sheng and BBQ Whole Suckling Pig. Click here to view the menu.</p>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -161,43 +164,59 @@
                     <div class="container">
                         <div class="row">
                             <div class="booking-form">
-                                <form onchange="formFunction()">
+                                <form onchange="formFunction()" action="thankyou.html">
                                     <div class="form-group">
-                                        <span class="form-label">Check In</span>
-                                        <input class="form-control" type="date" required>
+                                        <span class="form-label">Check In (Any day up to 3 months in advance)</span>
+                                        <input class="form-control" type="date" required id="dateInput" name="inputDate" onchange="validDate(inputDate)">
                                     </div>
                                     <div class="row no-margin">
                                         <div class="col-sm-6">
-                                            <div class="form-group" id="adultsSelect">
+                                            <div class="form-group">
                                                 <span class="form-label">Adults (18+)</span>
-                                                <select class="form-control">
+                                                <select class="form-control" id="adultsSelect">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
                                                 </select>
                                                 <span class="select-arrow"></span>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <div class="form-group" id="childSelect">
+                                            <div class="form-group">
                                                 <span class="form-label">Children (0-17)</span>
-                                                <select class="form-control">
+                                                <select class="form-control" id="childSelect">
                                                     <option value="0">0</option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
                                                 </select>
                                                 <span class="select-arrow"></span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group" id="attractionSelect">
+                                    <div class="form-group">
                                         <span class="form-label">I want to buy tickets for</span>
-                                        <select class="form-control" required>
-                                            <option value="" selected hidden>Select Attraction</option>
+                                        <select class="form-control" required id="attractionSelect">
+                                            <option value="" selected hidden>Select Type of Ticket</option>
                                             <option value="0">Singapore Flight</option>
                                             <option value="1">Singapore Sling Flight</option>
                                             <option value="2">Singapore Flyer Sky Dining</option>
                                             <option value="3">Premium Champagne Flight</option>
+
                                         </select>
                                         <span class="select-arrow"></span>
                                     </div>
@@ -224,7 +243,6 @@
 
         </section>
     </div>
-    
 
     <footer>
         <div w3-include-html="footer.html"></div>
