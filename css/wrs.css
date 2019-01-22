@@ -1,0 +1,378 @@
+﻿.content {
+    padding-top: 65px;
+    background-color: #f4f4f4;
+    width: 100%;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.inner-wrs-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wrs-content {
+    background-color: #E9E9E9;
+    margin: 0;
+}
+
+.wrs {
+    padding-top: 200px;
+    width: 100%;
+}
+
+
+h1 {
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(255,50,64,.15);
+}
+
+.content-title {
+    color: red;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Content */
+.inner-content {
+    background-color: white;
+    padding: 10px;
+    height: 430px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.wrsimg {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        float: none;
+        margin: auto;
+    }
+
+    info-text {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+
+.info-text {
+    padding: 150px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 0;
+    font-weight: bold;
+    letter-spacing: 0.0625em;
+    text-transform: uppercase;
+    background: #ff0000;
+    color: #fff;
+}
+
+    .button:hover,
+    .button:focus,
+    .button:active {
+        background: #00ff05;
+        color: black;
+    }
+
+video {
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/*booking starts here*/
+.section {
+    position: relative;
+    height: 100vh;
+}
+
+    .section .section-center {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+#booking {
+    font-family: 'Lato', sans-serif;
+}
+
+.booking-form {
+    max-width: 586px;
+    width: 100%;
+    margin: auto;
+}
+
+    .booking-form .form-group {
+        position: relative;
+        margin-bottom: 0px;
+    }
+
+    .booking-form > form .row.no-margin {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+        .booking-form > form .row.no-margin [class*="col-"] {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+    .booking-form .form-control {
+        background-color: #fff;
+        height: 80px;
+        padding: 25px 20px 0px;
+        border-radius: 0px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #0e2753;
+        border: 1px solid #dddee9;
+        border-bottom: 0px;
+        font-size: 20px;
+        font-weight: 700;
+        -webkit-transition: 0.2s all;
+        transition: 0.2s all;
+    }
+
+    .booking-form [class*="col-"] + [class*="col-"] .form-group .form-control {
+        border-left: 0px;
+    }
+
+    .booking-form .form-control::-webkit-input-placeholder {
+        color: #dddee9;
+    }
+
+    .booking-form .form-control:-ms-input-placeholder {
+        color: #dddee9;
+    }
+
+    .booking-form .form-control::placeholder {
+        color: #dddee9;
+    }
+
+    .booking-form .form-control:focus {
+        background: #f9f9f9;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .booking-form input[type="date"].form-control:invalid {
+        color: #dddee9;
+    }
+
+    .booking-form select.form-control {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+        .booking-form select.form-control:invalid {
+            color: #dddee9;
+        }
+
+        .booking-form select.form-control option {
+            color: #0e2753;
+        }
+
+        .booking-form select.form-control + .select-arrow {
+            position: absolute;
+            right: 0px;
+            bottom: 4px;
+            width: 32px;
+            line-height: 32px;
+            height: 32px;
+            text-align: center;
+            pointer-events: none;
+            color: #dddee9;
+            font-size: 20px;
+        }
+
+            .booking-form select.form-control + .select-arrow:after {
+                content: '\279C';
+                display: block;
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+
+    .booking-form .form-label {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        color: #f14634;
+        font-weight: 400;
+        line-height: 24px;
+        font-style: italic;
+        height: 24px;
+        font-size: 14px;
+    }
+
+    .booking-form .submit-btn {
+        color: #fff;
+        background-color: #f14634;
+        font-weight: 700;
+        height: 80px;
+        font-size: 18px;
+        text-transform: capitalize;
+        border: none;
+        width: 100%;
+    }
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+
+    .rws {
+        padding: 0;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+    .rws {
+        padding: 0;
+    }
+}
+
+/*Responsive layout for form*/
+@media only screen and (max-width: 767px) {
+    .booking-form [class*="col-"] + [class*="col-"] .form-group .form-control {
+        border-left: 1px solid #dddee9;
+    }
+}

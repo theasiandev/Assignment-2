@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Thank You!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="media/newlogo.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="js/includeHTML.js"></script>
+    <style>
+        * {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .content {
+            padding-top: 65px;
+            background-color: #f4f4f4;
+            text-align:center;
+        }
+
+        .thankyou{
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div w3-include-html="header.html"></div>
+    </header>
+    <div class="content">
+        <section class="thankyou">
+            <h2>Thank you for your order!</h2>
+            <h3>Your order will be sent to the email address that you have indicated.</h3>
+        </section>
+    </div>
+    <footer>
+        <div w3-include-html="footer.html"></div>
+    </footer>
+    <script>includeHTML();</script>
+</body>
+</html>
