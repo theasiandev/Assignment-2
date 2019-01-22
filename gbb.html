@@ -11,6 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="js/includeHTML.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="js/gbbform.js"></script>
 </head>
 <body>
     <header>
@@ -92,12 +94,15 @@
             <h3>A national garden and premier horticultural attraction for local and international visitors, Gardens by the Bay is a showpiece of horticulture and garden artistry that presents the plant kingdom in a whole new way, entertaining while educating visitors with plants seldom seen in this part of the world, ranging from species in cool, temperate climates to tropical forests and habitats.</h3>
 
             <h4>Major attractions: Cloud Forest, Flower Dome, The Canyon, Supertree Grove, Sun Pavilion and Serene Garden</h4>
-            <p>
-                -Book your tickets at our ticketing counter or pre-book below.
-            </p>
             <section class="calltoaction">
                 <a class="button" href="#booking">Buy tickets now!</a>
             </section>
+            <h5>Cooled Conservatories & OCBC Skyway Operating Hours: 9am - 9pm Daily</h5>
+            <h5>Outdoor Gardens Operating Hours: 5am - 2am Daily</h5>
+            <h5>Far East Organisation Children's Garden Operating Hours: 10am - 7pm (Tuesday - Fridays)</h5>
+            <h5>Far East Organisation Children's Garden Operating Hours: 9am - 9pm (Weekends & Public Holidays)</h5><br />
+            <h5>Address: 18 Marina Gardens Drive, Singapore 018953</h5>
+            <h5>Click <a href="https://goo.gl/maps/hvGAvyJC9o12">here</a> for directions by Google Maps</h5>
         </section>
         <!-- Content starts here -->
         <section class="gbb">
@@ -117,7 +122,7 @@
                             <div class="inner-content">
                                 <img src="media/gbb/orchid.jpg" alt="Orchids of the Andes" style="width:100%">
                                 <h3>Orchids of the Andes</h3>
-                                <p>The “Orchids of the Andes” (安第斯山脉兰花展) display explores the relationship between the Tropical Andean landscape, its flora and the people. Visitors can look forward to a variety of exquisite orchid species and hybrids dotting a landscape featuring elements of the famous mountain range, such as Inca ruins, a cavern, waterfalls and even “llamas”.</p>
+                                <p>The “Orchids of the Andes” display explores the relationship between the Tropical Andean landscape, its flora and the people.</p>
                             </div>
                         </div>
                         <div class="column">
@@ -204,43 +209,59 @@
                     <div class="container">
                         <div class="row">
                             <div class="booking-form">
-                                <form onchange="formFunction()">
+                                <form onchange="formFunction()" action="thankyou.html">
                                     <div class="form-group">
-                                        <span class="form-label">Check In</span>
-                                        <input class="form-control" type="date" required>
+                                        <span class="form-label">Check In (Any day up to 3 months in advance)</span>
+                                        <input class="form-control" type="date" required id="dateInput" name="inputDate" onchange="validDate(inputDate)">
                                     </div>
                                     <div class="row no-margin">
                                         <div class="col-sm-6">
-                                            <div class="form-group" id="adultsSelect">
+                                            <div class="form-group">
                                                 <span class="form-label">Adults (18+)</span>
-                                                <select class="form-control">
+                                                <select class="form-control" id="adultsSelect">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
                                                 </select>
                                                 <span class="select-arrow"></span>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <div class="form-group" id="childSelect">
+                                            <div class="form-group">
                                                 <span class="form-label">Children (0-17)</span>
-                                                <select class="form-control">
+                                                <select class="form-control" id="childSelect">
                                                     <option value="0">0</option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
                                                 </select>
                                                 <span class="select-arrow"></span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group" id="attractionSelect">
+                                    <div class="form-group">
                                         <span class="form-label">I want to buy tickets for</span>
-                                        <select class="form-control" required>
-                                            <option value="" selected hidden>Select Attraction</option>
-                                            <option value="0">Singapore Zoo</option>
-                                            <option value="1">River Safari</option>
-                                            <option value="2">Night Safari</option>
-                                            <option value="3">Jurong Bird Park</option>
+                                        <select class="form-control" required id="attractionSelect">
+                                            <option value="" selected hidden>Select Type of Ticket</option>
+                                            <option value="0">Standard Rate - Two Conservatories</option>
+                                            <option value="3">OCBC Skyway</option>
+                                            <option value="1">Singapore Resident Rate - Two Conservatories</option>
+                                            <option value="2">Singapore Resident Rate - One Conservatory</option>
+
                                         </select>
                                         <span class="select-arrow"></span>
                                     </div>
