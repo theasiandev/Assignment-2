@@ -189,6 +189,13 @@ img {
     text-align: center;
 }
 
+.weather {
+    position: sticky;
+    top: 0;
+    padding-top: 60px;
+    z-index: 2 !important;
+    max-height: 70%;
+}
 
 .button {
     display: inline-block;

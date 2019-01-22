@@ -26,6 +26,14 @@
     width:100%;
 }
 
+.weather {
+    position: sticky;
+    top: 0;
+    padding-top: 60px;
+    z-index: 2 !important;
+    max-height:70%;
+}
+
 
 h1 {
     

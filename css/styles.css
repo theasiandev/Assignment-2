@@ -21,6 +21,14 @@ video {
     display: block;
 }
 
+.weather {
+    position: sticky;
+    top: 0;
+    padding-top: 60px;
+    z-index: 2 !important;
+    max-height: 70%;
+}
+
 .images{
     height:100%;
     width:auto;

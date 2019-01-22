@@ -19,12 +19,6 @@
         <div w3-include-html="header.html"></div>
     </header>
     <div class="content">
-        <section class="weather">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/1d35103d82/singapore/" data-label_1="SINGAPORE" data-label_2="WEATHER">SINGAPORE WEATHER</a>
-            <script>
-                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-            </script>
-        </section>
         <section class="rws-video">
             <center>
                 <video controls autoplay muted loop>
@@ -33,7 +27,12 @@
                 </video>
             </center>
         </section>
-
+        <section class="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/1d35103d82/singapore/" data-label_1="SINGAPORE" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="dark">SINGAPORE WEATHER</a>
+            <script>
+                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+            </script>
+        </section>
         <section class="flyerimg" style="float:left; margin:30px;">
             <div class="carousel" id="featured" data-ride="carousel">
                 <div class="carousel-inner">
@@ -102,9 +101,9 @@
                     <center><h1 class="content-title">Chinese New Year Events!</h1></center>
 
                     <div class="inner-content">
-                     
-                            <img src="media/flyer/banner.jpg" alt="Chinese New Year" class="img-responsive">
-                            
+
+                        <img src="media/flyer/banner.jpg" alt="Chinese New Year" class="img-responsive">
+
 
                         <h3>Chinese New Year Set Menus</h3>
                         <p>Turn your fortune around this Chinese New Year at Singapore Flyer.</p>
