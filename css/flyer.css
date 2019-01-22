@@ -176,10 +176,6 @@ img {
         float: none;
         margin: auto;
     }
-
-    info-text {
-        margin: 0;
-    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -189,7 +185,8 @@ img {
 }
 
 .info-text {
-    padding: 150px;
+    padding-top: 150px;
+    text-align: center;
 }
 
 
