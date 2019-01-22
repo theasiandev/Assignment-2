@@ -8,9 +8,9 @@
     padding:100px;
 
 }
-    .welcomemessage h1 {
-        font-size: xx-large;
-    }
+.welcomemessage h1 {
+    font-size: xx-large;
+}
 
 video {
     width: 100%;
@@ -29,11 +29,12 @@ video {
     max-height: 70%;
 }
 
-.images{
-    height:100%;
-    width:auto;
-    max-width:500px;
-   
+.images {
+    height: 100%;
+    width: auto;
+    max-width: 500px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.4);
+    transition: transform 0.3s linear;
 }
 a:hover #hvrimg, a:focus #hvrimg {
     transform: scale(1.5);
@@ -46,15 +47,10 @@ a:hover .images {
     box-shadow: 8px 8px 8px rgba(0,0,0,.3);
 }
 
-.images {
-    box-shadow: 4px 4px 4px rgba(0,0,0,.4);
-    transition: transform 0.3s linear;
-}
 .contents {
     max-width: 1500px;
     margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding:30px;
 }
 
 .flag {
@@ -68,21 +64,20 @@ a:hover .images {
 }
 
 .flex-content {
-    max-width: 100%;
+    width: 100%;
     padding-bottom:300px;
 }
 
 .column {
     float: left;
     width: 25%;
-    padding: 5px;
+    padding:5px;
     height: 250px;
     display: flex;
 }
-
 .column img{
-    max-height:350px;
-    max-width:400px;
+    
+    max-width:100%;
 }
 
 /* Clearfix (clear floats) */
@@ -97,9 +92,14 @@ a:hover .images {
     .column {
        
         width: 50%;
-        padding-left:50px;
-        padding-right:50px;
-        margin: auto;
+        padding-left:25px;
+        padding-right:25px;
+        margin:0 auto;
+    }
+
+    img {
+        
+        width: 100%;
     }
 }
 
@@ -111,6 +111,16 @@ a:hover .images {
 }
 
 @media screen and (max-width: 780px) {
+    a:hover #hvrimg, a:focus #hvrimg {
+        transform: scale(1.2);
+    }
+
+    a:hover #hvrimg {
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 1700px) {
     a:hover #hvrimg, a:focus #hvrimg {
         transform: scale(1.3);
     }
