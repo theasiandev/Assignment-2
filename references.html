@@ -13,13 +13,25 @@
             font-family: 'Quicksand', sans-serif;
         }
 
-        .content {
-            padding-top: 65px;
+        .panel {
             background-color: #f4f4f4;
+          
+        }
+     
+
+        .list-group li {
+            display: block;
         }
 
-        .references{
-            padding: 70px;
+        .list-group li:before {
+            Using a Bootstrap glyphicon as the bullet point
+            content: "\e080";
+            font-family: 'Glyphicons Halflings';
+            font-size: 9px;
+            float: left;
+            margin-top: 4px;
+            margin-left: -17px;
+            color: #ff0000;
         }
     </style>
 </head>
@@ -27,40 +39,47 @@
     <header>
         <div w3-include-html="header.html"></div>
     </header>
-    <div class="content">
-        <div class="references">
-            <h1 style="text-align:center;">The references to the media on this website is as shown.</h1><br />
-            <h3>
-                <ul>
-                    <li>https://www.visitsingapore.com/content/dam/desktop/global/itunesapp/iTunesArtwork.png</li>
-                    <li>http://www.worldgourmetsummit.com/wgs2005/photos/images/logo_uni_white.jpg</li>
-                    <li>https://www.youtube.com/watch?v=RDliHcnalbw</li>
-                    <li>https://5footwayinn.com/wp-content/uploads/2018/08/AdventureCoveWaterpark.jpg</li>
-                    <li>https://www.youtube.com/watch?v=alkLuFud8J0</li>
-                    <li>https://www.rwsentosa.com/-/media/project/non-gaming/rwsentosa/attractions/universal-studios-singapore/others/uss-family-1366x666.jpg?h=268&la=en&w=550&hash=B71F42445516444FD82FBA42CA111C9951E2DDAB</li>
-                    <li>https://www.rwsentosa.com/-/media/project/non-gaming/rwsentosa/attractions/adventure-cove-waterpark/acw_tidaltwister.jpg?h=268&la=en&w=550&hash=BDFD759184C811277C0076F1056EC9E7F804A5BA</li>
-                    <li>https://weatherwidget.io</li>
-                    <li>https://www.learningtutorialpoint.com/how-to-make-a-footer-fully-responsive-in-html-and-css/</li>
-                    <li>https://codepen.io/MadeByMike/pen/eKPZZz</li>
-                    <li>http://www.gardensbythebay.com.sg/en.html</li>
-                    <li>https://store.wrs.com.sg/</li>
-                    <li>https://comelah.com/products/singapore-zoo</li>
-                    <li>https://www.wrs.com.sg/en/river-safari/learning-with-us/education-programmes/lessons-primary.html</li>
-                    <li>https://alvinology.com/2015/01/28/experience-the-safari-adventurer-tour-with-a-naturalist-for-less-than-200-per-person/</li>
-                    <li>https://www.bykido.com/products/jurong-bird-park-ticket-tram-rides-discounted-tickets</li>
-                    <li>https://www.wrs.com.sg/en/night-safari/whats-on.html</li>
-                    <li>https://www.thebestsingapore.com/best-place/sky-dining-on-cloud-9-mount-faber/</li>
-                    <li>https://www.singaporeair.com/microsite/global/BPP/sg-attractions-sgflyer.html</li>
-                    <li>http://www.singaporeflyer.com/flyer360plus/</li>
-                    <li>https://theculturetrip.com/asia/singapore/articles/10-romantic-spots-to-propose-in-singapore/</li>
-                    <li>https://www.youtube.com/watch?v=BLY5Rfa1hAY</li>
-                    <li>https://www.youtube.com/watch?v=vMVQKk4kOCo</li>
-                    
+    <section >
+        
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Panel heading</div>
+                <div class="panel-body">
+                    <center><h1>The references to the media on this website is as shown.</h1></center>
+                </div>
 
+                <!-- List group -->
+
+                <ul class="list-group">
+                    <li class="list-group-item">https://www.visitsingapore.com/content/dam/desktop/global/itunesapp/iTunesArtwork.png</li>
+                    <li class="list-group-item">http://www.worldgourmetsummit.com/wgs2005/photos/images/logo_uni_white.jpg</li>
+                    <li class="list-group-item">https://www.youtube.com/watch?v=RDliHcnalbw</li>
+                    <li class="list-group-item">https://5footwayinn.com/wp-content/uploads/2018/08/AdventureCoveWaterpark.jpg</li>
+                    <li class="list-group-item">https://www.youtube.com/watch?v=alkLuFud8J0</li>
+                    <li class="list-group-item">https://www.rwsentosa.com/-/media/project/non-gaming/rwsentosa/attractions/universal-studios-singapore/others/uss-family-1366x666.jpg?h=268&la=en&w=550&hash=B71F42445516444FD82FBA42CA111C9951E2DDAB</li>
+                    <li class="list-group-item">https://www.rwsentosa.com/-/media/project/non-gaming/rwsentosa/attractions/adventure-cove-waterpark/acw_tidaltwister.jpg?h=268&la=en&w=550&hash=BDFD759184C811277C0076F1056EC9E7F804A5BA</li>
+                    <li class="list-group-item">https://weatherwidget.io</li>
+                    <li class="list-group-item">https://www.learningtutorialpoint.com/how-to-make-a-footer-fully-responsive-in-html-and-css/</li>
+                    <li class="list-group-item">https://codepen.io/MadeByMike/pen/eKPZZz</li>
+                    <li class="list-group-item">http://www.gardensbythebay.com.sg/en.html</li>
+                    <li class="list-group-item">https://store.wrs.com.sg/</li>
+                    <li class="list-group-item">https://comelah.com/products/singapore-zoo</li>
+                    <li class="list-group-item">https://www.wrs.com.sg/en/river-safari/learning-with-us/education-programmes/lessons-primary.html</li>
+                    <li class="list-group-item">https://alvinology.com/2015/01/28/experience-the-safari-adventurer-tour-with-a-naturalist-for-less-than-200-per-person/</li>
+                    <li class="list-group-item">https://www.bykido.com/products/jurong-bird-park-ticket-tram-rides-discounted-tickets</li>
+                    <li class="list-group-item">https://www.wrs.com.sg/en/night-safari/whats-on.html</li>
+                    <li class="list-group-item">https://www.thebestsingapore.com/best-place/sky-dining-on-cloud-9-mount-faber/</li>
+                    <li class="list-group-item">https://www.singaporeair.com/microsite/global/BPP/sg-attractions-sgflyer.html</li>
+                    <li class="list-group-item">http://www.singaporeflyer.com/flyer360plus/</li>
+                    <li class="list-group-item">https://theculturetrip.com/asia/singapore/articles/10-romantic-spots-to-propose-in-singapore/</li>
+                    <li class="list-group-item">https://www.youtube.com/watch?v=BLY5Rfa1hAY</li>
+                    <li class="list-group-item">https://www.youtube.com/watch?v=vMVQKk4kOCo</li>
+                    <li class="list-group-item">https://colorlib.com/wp/?s=form</li>
                 </ul>
-            </h3>
-        </div>
-    </div>
+
+            </div>
+      
+    </section>
     <footer>
         <div w3-include-html="footer.html"></div>
     </footer>
