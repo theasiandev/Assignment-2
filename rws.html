@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>RWS</title>
+    <title>Resorts World Sentosa | SG Attractions</title>
     <link rel="shortcut icon" type="image/x-icon" href="media/newlogo.ico" />
     <link rel="stylesheet" type="text/css" href="css/rws.css" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="css/scrollbar.css" rel="stylesheet" type="text/css">
     <script src="js/includeHTML.js"></script>
     <script src="js/rwsform.js"></script>
 </head>
@@ -22,13 +23,6 @@
     </header>
 
     <div class="content">
-        <section class="weather">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/1d35103d82/singapore/" data-label_1="SINGAPORE" data-label_2="WEATHER">SINGAPORE WEATHER</a>
-            <script>
-                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-            </script>
-        </section>
-
         <section class="rws-video">
             <center>
                 <video controls autoplay muted loop>
@@ -37,67 +31,74 @@
                 </video>
             </center>
         </section>
-        
-            <section class="rwsimg" style="float:left; margin:30px;">
-                <div class="carousel" id="featured" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <ol class="carousel-indicators">
-                            <li data-target="#featured" data-slide-to="0"></li>
-                            <li data-target="#featured" data-slide-to="1" class="active"></li>
-                            <li data-target="#featured" data-slide-to="2"></li>
-                            <li data-target="#featured" data-slide-to="3"></li>
-                        </ol>
-                        <div class="item active">
-                            <img src="media/rws/RWS.jpg" alt="RWS" style="width:100%;">
-                            <div class="text"><h3>Resorts World Sentosa</h3></div>
-                        </div>
 
-                        <div class="item">
-                            <img src="media/rws/USS.jpg" alt="USS" style="width:100%;">
-                            <div class="text"><h3>Universal Studios Singapore</h3></div>
-                        </div>
+        <section class="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/1d35103d82/singapore/" data-label_1="SINGAPORE" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="dark">SINGAPORE WEATHER</a>
+            <script>
+                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+            </script>
+        </section>
 
-                        <div class="item">
-                            <img src="media/rws/ACW.jpg" alt="ACW" style="width:100%;">
-                            <div class="text"><h3>Adventure Cove Waterpark</h3></div>
-                        </div>
-
-                        <div class="item">
-                            <img src="media/rws/SEAA.jpg" alt="SEA" style="width:100%;">
-                            <div class="text"><h3>SEA Aquarium</h3></div>
-                        </div>
+        <section class="rwsimg" style="float:left; margin:30px;">
+            <div class="carousel" id="featured" data-ride="carousel">
+                <div class="carousel-inner">
+                    <ol class="carousel-indicators">
+                        <li data-target="#featured" data-slide-to="0"></li>
+                        <li data-target="#featured" data-slide-to="1" class="active"></li>
+                        <li data-target="#featured" data-slide-to="2"></li>
+                        <li data-target="#featured" data-slide-to="3"></li>
+                    </ol>
+                    <div class="item active">
+                        <img src="media/rws/RWS.jpg" alt="RWS" style="width:100%;">
+                        <div class="text"><h3>Resorts World Sentosa</h3></div>
                     </div>
 
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#featured" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#featured" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    <br />
+                    <div class="item">
+                        <img src="media/rws/USS.jpg" alt="USS" style="width:100%;">
+                        <div class="text"><h3>Universal Studios Singapore</h3></div>
+                    </div>
+
+                    <div class="item">
+                        <img src="media/rws/ACW.jpg" alt="ACW" style="width:100%;">
+                        <div class="text"><h3>Adventure Cove Waterpark</h3></div>
+                    </div>
+
+                    <div class="item">
+                        <img src="media/rws/SEAA.jpg" alt="SEA" style="width:100%;">
+                        <div class="text"><h3>SEA Aquarium</h3></div>
+                    </div>
                 </div>
 
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#featured" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#featured" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <br />
+            </div>
 
+
+        </section>
+
+
+        <section class="info-text">
+            <h3>Resorts World Sentosa is an integrated resort on the island of Sentosa, off the southern coast of Singapore. It is one of the two resorts in Singapore, the other being Marina Bay Sands.</h3>
+
+            <h4>Major attractions: Universal Studios, Adventure Cove Waterpark, SEA Aquarium</h4><br /><br />
+
+            <section class="calltoaction">
+                <a class="button" href="#booking">Buy tickets now!</a>
             </section>
-     
-
-            <section class="info-text">
-                <h3>Resorts World Sentosa is an integrated resort on the island of Sentosa, off the southern coast of Singapore. It is one of the two resorts in Singapore, the other being Marina Bay Sands.</h3>
-
-                <h4>Major attractions: Universal Studios, Adventure Cove Waterpark, SEA Aquarium</h4><br /><br />
-
-                <section class="calltoaction">
-                    <a class="button" href="#booking">Buy tickets now!</a>
-                </section>
-                <br /><br />
-                <h5>Attractions Operating Hours: 10am - 7pm Daily</h5>
-                <h5>Hotels Operating Hours: 24 Hours Daily</h5><br />
-                <h5>Address: 8 Sentosa Gateway, Singapore 098269</h5>
-                <h5>Click <a href="https://goo.gl/maps/scmm3DQp8EE2" target="_blank">here</a> for directions by Google Maps</h5>
-            </section>
+            <br /><br />
+            <h5>Attractions Operating Hours: 10am - 7pm Daily</h5>
+            <h5>Hotels Operating Hours: 24 Hours Daily</h5><br />
+            <h5>Address: 8 Sentosa Gateway, Singapore 098269</h5>
+            <h5>Click <a href="https://goo.gl/maps/scmm3DQp8EE2" target="_blank">here</a> for directions by Google Maps</h5>
+        </section>
         <!-- Content starts here -->
         <section class="rws">
 
@@ -148,137 +149,137 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- contents end here -->
+            <!-- Content starts here -->
+
+
+            <div class="rws-content">
+                <div class="inner-rws-content">
+                    <center><h1 class="content-title">Attractions in Resorts World Sentosa</h1></center>
+                    <div class="row">
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/rws/uss2.jpg" alt="Universal Studios Singapore" style="width:100%">
+                                <h3>Universal Studios Singapore™</h3>
+                                <p>Southeast Asia’s first and only Universal Studios theme park, featuring 24 rides, shows and attractions in seven themed zones.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/rws/acw2.jpg" alt="Adventure Cove Waterpark" style="width:100%">
+                                <h3>Adventure Cove Waterpark™</h3>
+                                <p>Thrilling slides and encounters with marine life – all in one place. At Adventure Cove Waterpark, you can take high-speed water slides, laze the day away drifting on a lazy river, snorkel with 20,000 tropical fish over a colourful reef, wade among rays and even come face to face with sharks! Come have fun today with us at Resorts World Sentosa! Where the water's full of life.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/rws/seaa2.jpg" alt="S.E.A. Aquarium" style="width:100%">
+                                <h3>S.E.A. Aquarium™ </h3>
+                                <p>Enter and explore the marine realm of S.E.A. Aquarium, home to more than 100,000 marine animals of over 1,000 species, across 50 different habitats, each one as fascinating as the next. It's a marine life experience you won’t forget.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="inner-content">
+                                <img src="media/rws/MEM.jpg" alt="The Maritime Experiential Museum" style="width:100%">
+                                <h3>The Maritime Experiential Museum</h3>
+                                <p>Relive the glorious conquest of the seas, as you return to the Maritime Silk Route of eras past. Be transported through time in 15 thematic galleries, journey in the tailwinds of renowned seafarers, and even flee pirate invaders aboard a burning ship.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contents end here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <div id="booking" class="section">
+
+                <div class="section-center">
+                    <center><h1>Book an Attraction</h1></center>
+                    <div class="container">
+                        <div class="row">
+                            <div class="booking-form">
+                                <form onchange="formFunction()" action="thankyou.html">
+                                    <div class="form-group">
+                                        <span class="form-label">Check In (Any day up to 3 months in advance)</span>
+                                        <input class="form-control" type="date" required id="dateInput" name="inputDate" onchange="validDate(inputDate)">
+                                    </div>
+                                    <div class="row no-margin">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Adults (18+)</span>
+                                                <select class="form-control" id="adultsSelect">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Children (0-17)</span>
+                                                <select class="form-control" id="childSelect">
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="form-label">I want to buy tickets for</span>
+                                        <select class="form-control" required id="attractionSelect">
+                                            <option value="" selected hidden>Select Attraction</option>
+                                            <option value="uss">Universal Studios Singapore™</option>
+                                            <option value="seaa">S.E.A. Aquarium™</option>
+                                            <option value="acw">Adventure Cove Waterpark™</option>
+                                            <option value="mxm">The Maritime Experiential Museum</option>
+                                        </select>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="form-label">Email</span>
+                                        <input class="form-control" type="email" placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="form-label">Phone</span>
+                                        <input class="form-control" type="tel" placeholder="Enter your phone number">
+                                    </div>
+                                    <div class="form-btn">
+                                        <button class="submit-btn">Book Now</button>
+                                    </div>
+                                    <div style="color:red;" id="result">
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                    
-                    <!-- contents end here -->
-                    <!-- Content starts here -->
-                    
+            </div>
 
-                        <div class="rws-content">
-                            <div class="inner-rws-content">
-                                <center><h1 class="content-title">Attractions in Resorts World Sentosa</h1></center>
-                                <div class="row">
-                                    <div class="column">
-                                        <div class="inner-content">
-                                            <img src="media/rws/uss2.jpg" alt="Universal Studios Singapore" style="width:100%">
-                                            <h3>Universal Studios Singapore™</h3>
-                                            <p>Southeast Asia’s first and only Universal Studios theme park, featuring 24 rides, shows and attractions in seven themed zones.</p>
-                                        </div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="inner-content">
-                                            <img src="media/rws/acw2.jpg" alt="Adventure Cove Waterpark" style="width:100%">
-                                            <h3>Adventure Cove Waterpark™</h3>
-                                            <p>Thrilling slides and encounters with marine life – all in one place. At Adventure Cove Waterpark, you can take high-speed water slides, laze the day away drifting on a lazy river, snorkel with 20,000 tropical fish over a colourful reef, wade among rays and even come face to face with sharks! Come have fun today with us at Resorts World Sentosa! Where the water's full of life.</p>
-                                        </div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="inner-content">
-                                            <img src="media/rws/seaa2.jpg" alt="S.E.A. Aquarium" style="width:100%">
-                                            <h3>S.E.A. Aquarium™ </h3>
-                                            <p>Enter and explore the marine realm of S.E.A. Aquarium, home to more than 100,000 marine animals of over 1,000 species, across 50 different habitats, each one as fascinating as the next. It's a marine life experience you won’t forget.</p>
-                                        </div>
-                                    </div>
-                                    <div class="column">
-                                        <div class="inner-content">
-                                            <img src="media/rws/MEM.jpg" alt="The Maritime Experiential Museum" style="width:100%">
-                                            <h3>The Maritime Experiential Museum</h3>
-                                            <p>Relive the glorious conquest of the seas, as you return to the Maritime Silk Route of eras past. Be transported through time in 15 thematic galleries, journey in the tailwinds of renowned seafarers, and even flee pirate invaders aboard a burning ship.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- contents end here -->
-                            </div>
-                        </div>
-                    </section>
-    
-                    <section class="form">
-                        <div id="booking" class="section">
-
-                            <div class="section-center">
-                                <center><h1>Book an Attraction</h1></center>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="booking-form">
-                                            <form onchange="formFunction()" action="thankyou.html">
-                                                <div class="form-group">
-                                                    <span class="form-label">Check In (Any day up to 3 months in advance)</span>
-                                                    <input class="form-control" type="date" required id="dateInput" name="inputDate" onchange="validDate(inputDate)">
-                                                </div>
-                                                <div class="row no-margin">
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <span class="form-label">Adults (18+)</span>
-                                                            <select class="form-control" id="adultsSelect">
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
-                                                                <option value="6">6</option>
-                                                                <option value="7">7</option>
-                                                                <option value="8">8</option>
-                                                                <option value="9">9</option>
-                                                                <option value="10">10</option>
-                                                            </select>
-                                                            <span class="select-arrow"></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <span class="form-label">Children (0-17)</span>
-                                                            <select class="form-control" id="childSelect">
-                                                                <option value="0">0</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
-                                                                <option value="6">6</option>
-                                                                <option value="7">7</option>
-                                                                <option value="8">8</option>
-                                                                <option value="9">9</option>
-                                                                <option value="10">10</option>
-                                                            </select>
-                                                            <span class="select-arrow"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <span class="form-label">I want to buy tickets for</span>
-                                                    <select class="form-control" required id="attractionSelect">
-                                                        <option value="" selected hidden>Select Attraction</option>
-                                                        <option value="uss">Universal Studios Singapore™</option>
-                                                        <option value="seaa">S.E.A. Aquarium™</option>
-                                                        <option value="acw">Adventure Cove Waterpark™</option>
-                                                        <option value="mxm">The Maritime Experiential Museum</option>
-                                                    </select>
-                                                    <span class="select-arrow"></span>
-                                                </div>
-                                                <div class="form-group">
-                                                    <span class="form-label">Email</span>
-                                                    <input class="form-control" type="email" placeholder="Enter your email">
-                                                </div>
-                                                <div class="form-group">
-                                                    <span class="form-label">Phone</span>
-                                                    <input class="form-control" type="tel" placeholder="Enter your phone number">
-                                                </div>
-                                                <div class="form-btn">
-                                                    <button class="submit-btn">Book Now</button>
-                                                </div>
-                                                <div style="color:red;" id="result">
-
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </section>
-                </div>
+        </section>
+    </div>
 
     <footer>
         <div w3-include-html="footer.html"></div>

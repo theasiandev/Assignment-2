@@ -10,11 +10,25 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+
+/*for flyer-content boxes*/
+
 .inner-flyer-content {
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding:20px;
+}
+.img-responsive {
+    width:100%;
+}
+
+
+.inner-flyer-cnycontent {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top:10px;
+    padding-bottom:20px;
+    
 }
 
 .flyer-content {
@@ -162,10 +176,6 @@ img {
         float: none;
         margin: auto;
     }
-
-    info-text {
-        margin: 0;
-    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -175,9 +185,17 @@ img {
 }
 
 .info-text {
-    padding: 150px;
+    padding-top: 150px;
+    text-align: center;
 }
 
+.weather {
+    position: sticky;
+    top: 0;
+    padding-top: 60px;
+    z-index: 98 !important;
+    max-height: 70%;
+}
 
 .button {
     display: inline-block;
@@ -369,7 +387,18 @@ video {
     .rws {
         padding: 0;
     }
+
 }
+
+@media only screen and (max-width: 1150px) {
+
+    .inner-flyer-cnycontent {
+        padding-left: 20px;
+        padding-right:20px;
+    }
+}
+/*  End of inner-content */
+
 
 /*Responsive layout for form*/
 @media only screen and (max-width: 767px) {

@@ -12,8 +12,7 @@
 .inner-rws-content {
     max-width: 1000px;
     margin:0 auto;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding:20px;
 
 }
 .rws-content {
@@ -24,6 +23,14 @@
 .rws {
     padding-top: 200px;
     width:100%;
+}
+
+.weather {
+    position: sticky;
+    top: 0;
+    padding-top: 60px;
+    z-index: 98 !important;
+    max-height:70%;
 }
 
 
@@ -147,6 +154,10 @@ img {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+.info-text {
+    padding-top: 150px;
+    text-align:center;
+}
 
 @-webkit-keyframes fade {
     from {
@@ -173,9 +184,6 @@ img {
         float: none;
         margin:auto;
     }
-    info-text{
-        margin:0;
-    }
 }
 
 @media only screen and (max-width: 300px) {
@@ -183,11 +191,6 @@ img {
         font-size: 11px
     }
 }
-
-.info-text{
-    padding:150px;
-}
-
 
 .button {
     display: inline-block;
