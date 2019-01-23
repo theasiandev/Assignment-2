@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <!--responsive screen size-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gardens by the Bay | SG Attractions</title>
     <link rel="shortcut icon" type="image/x-icon" href="media/newlogo.ico" />
@@ -20,6 +21,7 @@
         <div w3-include-html="header.html"></div>
     </header>
     <div class="content">
+        <!--looping video-->
         <section class="gbb-video">
             <center>
                 <video controls autoplay muted loop>
@@ -28,13 +30,14 @@
                 </video>
             </center>
         </section>
+        <!--display weather-->
         <section class="weather">
             <a class="weatherwidget-io" href="https://forecast7.com/en/1d35103d82/singapore/" data-label_1="SINGAPORE" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="dark">SINGAPORE WEATHER</a>
             <script>
                 !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
             </script>
         </section>
-
+        <!--images slide show-->
         <section class="gbbimg" style="float:left; margin:30px;">
             <div class="carousel" id="featured" data-ride="carousel">
                 <div class="carousel-inner">
@@ -46,6 +49,7 @@
                     </ol>
                     <div class="item active">
                         <img src="media/gbb/gbb1.jpg" alt="Garden" style="width:100%;">
+                        <!--text indicated within the image-->
                         <div class="text"><h3>Garden By the Bay</h3></div>
                     </div>
 
@@ -90,11 +94,12 @@
 
         </section>
 
-
+        <!--text displayed beside the slide show-->
         <section class="info-text">
             <h3>A national garden and premier horticultural attraction for local and international visitors, Gardens by the Bay is a showpiece of horticulture and garden artistry that presents the plant kingdom in a whole new way, entertaining while educating visitors with plants seldom seen in this part of the world, ranging from species in cool, temperate climates to tropical forests and habitats.</h3>
 
             <h4>Major attractions: Cloud Forest, Flower Dome, The Canyon, Supertree Grove, Sun Pavilion and Serene Garden</h4>
+            <!--button to locate to booking-->
             <section class="calltoaction">
                 <a class="button" href="#booking">Buy tickets now!</a>
             </section>
@@ -102,7 +107,9 @@
             <h5>Outdoor Gardens Operating Hours: 5am - 2am Daily</h5>
             <h5>Far East Organisation Children's Garden Operating Hours: 10am - 7pm (Tuesday - Fridays)</h5>
             <h5>Far East Organisation Children's Garden Operating Hours: 9am - 9pm (Weekends & Public Holidays)</h5><br />
+            <!--address info-->
             <h5>Address: 18 Marina Gardens Drive, Singapore 018953</h5>
+            <!--link to view location-->
             <h5>Click <a href="https://goo.gl/maps/hvGAvyJC9o12">here</a> for directions by Google Maps</h5>
         </section>
         <!-- Content starts here -->

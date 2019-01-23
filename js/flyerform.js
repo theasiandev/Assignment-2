@@ -1,3 +1,4 @@
+//set date limit (input date >= today date & <= 3 months)
 function validDate(date) {
 
     todayDate = getTodaysDate();
@@ -6,7 +7,7 @@ function validDate(date) {
         document.getElementById('dateInput').setAttribute('max', getTodaysDateThreeMonths());
     }
 }
-
+//get today date
 function getTodaysDate() {
     date = new Date();
     day = date.getDate();
