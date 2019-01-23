@@ -193,7 +193,7 @@ img {
     position: sticky;
     top: 0;
     padding-top: 60px;
-    z-index: 2 !important;
+    z-index: 98 !important;
     max-height: 70%;
 }
 
