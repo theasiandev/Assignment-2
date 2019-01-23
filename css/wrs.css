@@ -112,12 +112,12 @@ img {
 
 .text {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.7); 
+    bottom: 1px;
+    right: 1px;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .dot {
