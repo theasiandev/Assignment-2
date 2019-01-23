@@ -380,3 +380,9 @@ video {
         border-left: 1px solid #dddee9;
     }
 }
+
+@media only screen and (max-width: 705px) {
+    .weather {
+        position: static;
+    }
+}
