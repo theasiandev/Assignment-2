@@ -1,7 +1,13 @@
 ﻿.content {
     padding-top: 65px;
-    background-color:#f4f4f4;
+    /*background-color:#f4f4f4;*/
+    background: linear-gradient(to bottom, #B721FF, #2AF598, #fec051, #FEE140, #FA709A );
+   
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
+
+
 
 .welcomemessage{
     text-align: center;
@@ -78,6 +84,26 @@ a:hover .images {
 .column img{
     
     max-width:100%;
+}
+
+/*scrolling*/
+::-webkit-scrollbar {
+    width: 20px;
+ 
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid rgba(102,102,102,1.00);
+    
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f72e35;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #474747;
 }
 
 /* Clearfix (clear floats) */

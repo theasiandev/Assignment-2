@@ -23,8 +23,15 @@ body {
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
-    padding-top: 75px; 
+    padding-top: 75px;
     bottom: 0px;
+    
+}
+
+.footer-all {
+    background: #FA709A;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .footer-social-icons {
