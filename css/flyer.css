@@ -81,6 +81,15 @@ body {
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
+img {
+    vertical-align: middle;
+}
+.flyerimg {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
 
 .text {
     position: absolute;
