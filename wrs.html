@@ -3,10 +3,12 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <!--responsive screen size-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wildlife Reserves Singapore | SG Attractions</title>
     <link rel="shortcut icon" type="image/x-icon" href="media/newlogo.ico" />
     <link rel="stylesheet" type="text/css" href="css/wrs.css" />
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -21,6 +23,7 @@
     </header>
 
     <div class="content">
+        <!--looping video-->
         <section class="wrs-video">
             <center>
                 <video controls autoplay muted loop>
@@ -29,13 +32,14 @@
                 </video>
             </center>
         </section>
+        <!--display weather-->
         <section class="weather">
             <a class="weatherwidget-io" href="https://forecast7.com/en/1d35103d82/singapore/" data-label_1="SINGAPORE" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="dark">SINGAPORE WEATHER</a>
             <script>
                 !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
             </script>
         </section>
-
+        <!--images slide show-->
         <section class="wrsimg" style="float:left; margin:30px;">
             <div class="carousel" id="featured" data-ride="carousel">
                 <div class="carousel-inner">
@@ -81,11 +85,12 @@
 
         </section>
 
-
+        <!--text displayed beside the slide show-->
         <section class="info-text">
             <h3>Wildlife Reserves Singapore (WRS) is dedicated to the management of world-leading zoological institutions—Jurong Bird Park, Night Safari, River Safari and Singapore Zoo—that aim to inspire people to value and conserve biodiversity by providing meaningful and memorable wildlife experiences.</h3>
 
             <h4>Major attractions: Singapore Zoo, River Safari, Night Safari and Jurong Bird Park</h4>
+            <!--button to locate to booking-->
             <section class="calltoaction">
                 <a class="button" href="#booking">Buy tickets now!</a>
             </section>
@@ -93,7 +98,9 @@
             <h5>Singapore Zoo & Bird Park Operating Hours: 8:30am - 6pm Daily</h5>
             <h5>River Safari Operating Hours: 10am - 7pm Daily</h5>
             <h5>Night Safari Operating Hours: 7:30pm - 12am Daily</h5><br />
+            <!--address info-->
             <h5>Address: 80 Mandai Lake Rd, Singapore 729826</h5>
+            <!--link to view location-->
             <h5>Click <a href="https://goo.gl/maps/L3Zwp72tJfq">here</a> for directions by Google Maps</h5>
 
         </section>

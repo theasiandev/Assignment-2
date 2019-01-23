@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <!--responsive screen size-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Singapore Flyer | SG Attractions</title>
     <link rel="shortcut icon" type="image/x-icon" href="media/newlogo.ico" />
@@ -20,7 +21,8 @@
         <div w3-include-html="header.html"></div>
     </header>
     <div class="content">
-        <section class="rws-video">
+        <section class="flyer-video">
+            <!--looping video-->
             <center>
                 <video controls autoplay muted loop>
                     <source src="media/flyer/flyervideo.mp4" type="video/mp4" />
@@ -28,12 +30,14 @@
                 </video>
             </center>
         </section>
+        <!--display weather-->
         <section class="weather">
             <a class="weatherwidget-io" href="https://forecast7.com/en/1d35103d82/singapore/" data-label_1="SINGAPORE" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="dark">SINGAPORE WEATHER</a>
             <script>
                 !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
             </script>
         </section>
+        <!--images slide show-->
         <section class="flyerimg" style="float:left; margin:30px;">
             <div class="carousel" id="featured" data-ride="carousel">
                 <div class="carousel-inner">
@@ -77,9 +81,9 @@
             </div>
 
 
-        </section> <!--hello-->
+        </section> 
 
-
+        <!--text displayed beside the slide show-->
         <section class="info-text">
             <h3>Embark on a journey around Singapore with FLYER 360+, an interactive in-capsule experience that unveils sights and stories of the vibrant city at the touch of your fingertips.</h3>
 
@@ -87,14 +91,17 @@
             <h4>
                 Book your tickets at our ticketing counter or pre-book below.
             </h4>
+            <!--button to locate to booking--> 
             <section class="calltoaction">
                 <a class="button" href="#booking">Buy tickets now!</a>
             </section>
+            <!--address info-->
             <h5>Singapore Flyer: 8:30am - 10:30pm Daily</h5><br />
             <h5>Address: 30 Raffles Ave, Singapore 039803</h5>
+            <!--link to view location-->
             <h5>Click <a href="https://goo.gl/maps/3JTEqWViZ3z">here</a> for directions by Google Maps</h5>
         </section>
-        <!-- Content starts here -->
+        <!-- Content starts here (CNY)-->
         <section class="flyer">
 
             <div class="flyer-content">
@@ -115,9 +122,8 @@
             </div>
 
             <!-- contents end here -->
-            <!-- Content starts here -->
 
-
+            <!-- Content starts here (attractions)-->
             <div class="flyer-content">
                 <div class="inner-flyer-content">
                     <center><h1 class="content-title">Attractions in Singapore Flyer</h1></center>
@@ -155,7 +161,7 @@
                 </div>
             </div>
         </section>
-
+        <!--booking form-->
         <section class="form">
             <div id="booking" class="section">
 
