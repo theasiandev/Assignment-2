@@ -10,6 +10,11 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+wrs-content img{
+    max-height: 268px;
+    max-width: 550px;
+}
+
 .inner-wrs-content {
     max-width: 1000px;
     margin: 0 auto;
